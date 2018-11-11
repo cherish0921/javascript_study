@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 123;
+
+        function foo(a) { //作用域查找  page 16
+            console.log('window下的全局变量：')
+            console.log(window.a) //123
+            console.log(a) //456
+        }
+
+        foo(456)    
+    </script>
+</body>
+
+</html>
